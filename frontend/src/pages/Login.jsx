@@ -95,7 +95,7 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          {/* ☑️ RECORDAR + LINK */}
+    
           <div style={styles.optionsRow}>
             <div>
               <input
