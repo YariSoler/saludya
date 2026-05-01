@@ -32,7 +32,7 @@ function PerfilPaciente() {
   return (
     <div style={styles.container}>
 
-      {/* SIDEBAR */}
+ 
       <div style={styles.sidebar}>
         <div style={styles.logoBox}>
           <div style={styles.logo}></div>
@@ -54,7 +54,6 @@ function PerfilPaciente() {
         <div style={styles.activeMenu}>👤 Perfil</div>
       </div>
 
-      {/* MAIN */}
       <div style={styles.main}>
         <div style={styles.card}>
 
