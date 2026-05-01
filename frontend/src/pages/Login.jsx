@@ -116,13 +116,13 @@ function Login() {
             </span>
           </div>
 
-          {/* 🔘 BOTÓN */}
+          
           <button type="submit" style={styles.button}>
             Iniciar sesión
           </button>
         </form>
 
-        {/* 🔗 REGISTRO */}
+        
         <p style={styles.registerText}>
           ¿No tienes cuenta?{" "}
           <span
