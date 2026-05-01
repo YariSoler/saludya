@@ -23,7 +23,7 @@ function AgendarCita() {
       return;
     }
 
-    // 🔥 BLOQUEAR FINES DE SEMANA
+
     const fechaSeleccionada = new Date(fecha);
     const dia = fechaSeleccionada.getDay();
 
