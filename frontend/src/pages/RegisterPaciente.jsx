@@ -26,7 +26,7 @@ function RegisterPaciente() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    console.log("FORM:", form); // 🔥 DEBUG
+    console.log("FORM:", form); 
 
     try {
       const res = await fetch("http://localhost:3001/register", {
@@ -62,7 +62,7 @@ function RegisterPaciente() {
 
         <form onSubmit={handleRegister} style={styles.grid}>
 
-          {/* IZQUIERDA */}
+
           <input
             name="nombre"
             placeholder="Nombre completo"
@@ -71,7 +71,7 @@ function RegisterPaciente() {
           />
 
           <input
-            name="email" // 🔥 AQUÍ ESTÁ EL FIX
+            name="email" 
             placeholder="Correo electrónico"
             style={styles.input}
             onChange={handleChange}
