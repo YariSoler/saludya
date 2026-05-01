@@ -53,7 +53,7 @@ function DashboardAdmin() {
   return (
     <div style={styles.container}>
 
-      {/* SIDEBAR */}
+
       <div style={styles.sidebar}>
         <div style={styles.logoBox}>
           <div style={styles.logo}></div>
