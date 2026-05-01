@@ -11,7 +11,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    // 🔥 VALIDACIÓN
+ 
     if (!email || !password) {
       alert("Completa todos los campos");
       return;
@@ -29,10 +29,10 @@ function Login() {
       const data = await response.json();
 
       if (data.success) {
-        // 🔥 Guardar usuario real
+        
         localStorage.setItem("usuario", JSON.stringify(data.user));
 
-        // 🔐 Redirección por rol
+        
         if (email.includes("admin")) {
           navigate("/dashboard-admin");
         } 
@@ -57,20 +57,19 @@ function Login() {
     <div style={styles.container}>
       <div style={styles.card}>
         
-        {/* 🔵 LOGO */}
+        
         <div style={styles.logo}></div>
 
-        {/* 📝 TITULO */}
         <h2 style={styles.title}>Bienvenido</h2>
 
-        {/* 📄 SUBTEXTO */}
+
         <p style={styles.subtitle}>
           Sistema de gestión médica
         </p>
 
         <form onSubmit={handleLogin}>
           
-          {/* 📧 EMAIL */}
+
           <label style={styles.label}>
             Correo electrónico
           </label>
@@ -83,7 +82,7 @@ function Login() {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          {/* 🔒 PASSWORD */}
+
           <label style={styles.label}>
             Contraseña
           </label>
