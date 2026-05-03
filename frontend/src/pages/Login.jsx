@@ -71,7 +71,7 @@ function Login() {
           
 
           <label style={styles.label}>
-           Email
+           Correo electronico
           </label>
 
           <input
